@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="flex-container">
+        <div class="flex-item">
+            <h1 style="text-align: center">
+                {{favorite_thing['name']}}
+            </h1>
+            <h2>
+                {{favorite_thing['description']}}
+            </h2>
+        </div>
+        <div class="flex-item">
+            <img src="{{favorite_thing['image']}}" alt="favorite_thing['image_alt']">
+        </div> 
+    </div>
+    
+{% endblock %}

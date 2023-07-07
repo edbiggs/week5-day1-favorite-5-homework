@@ -1,0 +1,35 @@
+body{
+    background-color: grey;
+}
+
+.my-container{
+    display: flex;
+    background-color: black;
+    height: 500px;
+    width: 500px;
+}
+
+img{
+    display: inline;
+    margin-left: 20%;
+    margin-top: 10%;
+    
+}
+
+h2{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    margin-top: 5%;
+    height: auto;
+    width: 50%;
+    flex-direction: row;
+}
+
+
