@@ -3,4 +3,22 @@
 {% block content %}
 <h1 style="text-align: center;">Welcome to Eddie's Favorite Things, the most comprehensive website dedicated to documenting Eddie's five favorite things in the world! </h1>
     
+
+{% for thing in things %}
+
+<div class="flex-container">
+    <div class="flex-item">
+        <h1 style="text-align: center">
+            {{thing['name']}}
+        </h1>
+        <h2>
+            {{thing['description']}}
+        </h2>
+    </div>
+    <div class="flex-item">
+        <img src="{{thing['image']}}" alt="thing['image_alt']">
+    </div> 
+</div>
+
+{% endfor %}
 {% endblock %}
